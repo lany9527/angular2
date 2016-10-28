@@ -10,13 +10,18 @@ import { AppTradeComponent } from './view/trade/trade.component'
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component'
 
 import { HighlightDirective } from './directives/highlight.directive'
+import { MyCurrencyDirective } from './directives/my-currency.directive'
+import { MyCurrencyPipe } from './pipe/my-currency.pipe'
+
 
 import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MyCurrencyDirective,
+    MyCurrencyPipe
   ],
   imports: [
     BrowserModule,
