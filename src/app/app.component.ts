@@ -19,7 +19,8 @@ export class AppComponent implements OnInit {
   constructor(private heroService: HeroService, private myCurrencyPipe: MyCurrencyPipe) {
 
     //input format
-    this.balanceAmount = this.myCurrencyPipe.transform('1234567.89');
+    // this.balanceAmount = this.myCurrencyPipe.transform('1234567.89');
+    this.balanceAmount = this.myCurrencyPipe.transform(1234567.89);
     // this.balanceAmount = 1234567.89;
   }
 
@@ -35,7 +36,7 @@ export class AppComponent implements OnInit {
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
-  
+
   ngOnInit(): void {
     this.getHeroes()
   }
