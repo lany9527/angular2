@@ -15,6 +15,7 @@ import { MyCurrencyPipe } from './pipe/my-currency.pipe'
 
 
 import { UserService } from './services/user.service';
+import { ProductService } from './services/product/product.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { UserService } from './services/user.service';
     FormsModule
   ],
   
-  providers: [ UserService ],
+  providers: [ UserService, ProductService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
